@@ -9,7 +9,7 @@ Answer the following questions in your own words:
 
 1. What is the purpose of the `get_radius_from_user()` function? What value
    does it `return`?
-
+The purpose
 2. What is the purpose of the `calculate_area(radius)` function? What is the
    `radius` variable in this function called (an argument or a parameter)?
 
