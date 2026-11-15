@@ -11,15 +11,18 @@ Run the code and carefully observe the output.
 Answer the following questions:
 
 1. What is the value of the `color` variable *before* the function is called?
-
+green, dictated by " color = "green" " at the start
 2. What is the value of the `color` variable that is printed *from inside*
    the `change_color()` function?
-
+blue 
 3. What is the value of the `color` variable *after* the function has
    finished running?
-
+green due to the global variable at the start not being changed
 4. Why did the value of the global `color` variable not change, even though
    the function seemed to change it to "Blue"?
+
+   The reason why this didn't change would be due to the global variable being above the local variable, therefore in order
+   to change it you have to add global color to the top top of the function to effect the global variable.
 """
 
 # This is a global variable.
