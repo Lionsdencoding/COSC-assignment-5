@@ -68,11 +68,40 @@ Stretch Goals (Optional):
 
 # Part 1: Define your conversion functions here.
 
+def celsius_to_fahrenheit(celsius):
+    return (celsius * 9/5) + 32
+
+def `fahrenheit_to_celsius(fahrenheit):
+    return (fahrenheit - 32) * 5/9
+
+def miles_to_kilometers(miles):
+    return miles * 1.60934
+
+def kilometers_to_miles(kilometers):
+    return kilometers * 0.621371
+
 
 # Part 2: Implement your main program logic here.
 
 print("Welcome to the Universal Converter!")
 
 # Get input from the user
-
+value = float(input("enter value to cnvert.")
+    start_unit = input("enter the starting unit (ex: celcius, miles): ")
+    target_unit = input("enter the target unit(ex: fahrenheit, kilometers):")
 # Use if/elif/else to call the correct function and print the result
+if start_unit == "celsius" and target_unit == "fahrenheit":
+    result = celsius_to_fahrenheit(value)
+elif start_unit == "fahrenheit" and target_unit == "celsius":
+    result = fahrenheit_to_celsius(value)
+
+elif start_unit == "miles" and target_unit == "kilometers":
+    result = miles_to_kilometers(value)
+elif start_unit == "kilometers" and target_unit == "miles":
+    result = kilometers_to_miles(value)
+
+else print(f"Error: conversion from {start_unit} to {target_unit} is not supported in this program.")
+        result = none
+
+if result is not none:
+    print(f"{value}{start_unit} is equal to {result}{target_unit.")
