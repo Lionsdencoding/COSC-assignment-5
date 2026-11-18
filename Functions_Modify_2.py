@@ -15,7 +15,8 @@ Your task:
     calculation code with calls to your new `calculate_total_cost` function.
 5.  Make sure the final output of the program remains the same!
 """
-
+def calculate_total_cost(price, tax_rate):
+    return price + price *tax_rate
 # --- Main program execution starts here ---
 print("Calculating costs...")
 
@@ -23,8 +24,7 @@ print("Calculating costs...")
 price_1 = 5.00
 tax_rate_1 = 0.07
 # --- This block of code is repetitive ---
-tax_amount_1 = price_1 * tax_rate_1
-total_cost_1 = price_1 + tax_amount_1
+total_cost_1 = calculate_total_cost(price_1, tax_rate_1)
 print(f"Customer 1 total: ${total_cost_1:.2f}")
 # ----------------------------------------
 
@@ -32,7 +32,6 @@ print(f"Customer 1 total: ${total_cost_1:.2f}")
 price_2 = 7.50
 tax_rate_2 = 0.07
 # --- This block of code is also repetitive ---
-tax_amount_2 = price_2 * tax_rate_2
-total_cost_2 = price_2 + tax_amount_2
+total_cost_2 = calculate_total_cost(price_2, tax_rate_2)
 print(f"Customer 2 total: ${total_cost_2:.2f}")
 # -----------------------------------------
